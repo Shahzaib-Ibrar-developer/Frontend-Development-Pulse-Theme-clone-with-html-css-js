@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse Plus Signup Form</title>
+    <link rel="stylesheet" href="BillingInfo.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="./assets/pulse-logo.png" alt="">
+                </a>
+            </div>
+            <button class="navbar-toggler">
+                &#9776;
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="/Features.html">Features</a></li>
+                <li><a href="/CustomerStories.html">Customer Stories</a></li>
+                <li><a href="/Pricing.html">Pricing</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/BillingInfo.html" class="sign-up">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="form-section">
+            <form action="#">
+                <div class="input-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="input-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="company-name">Company Name</label>
+                    <input type="text" id="company-name" name="company-name" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Create a Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div class="input-group">
+                    <label for="site-address">Your Pulse Site Address</label>
+                    <div class="site-address-group">
+                        <input type="text" id="site-address" name="site-address" required>
+                        <span>.pulseapp.com</span>
+                    </div>
+                </div>
+                <p class="note">Letters and numbers only, no spaces.</p>
+            </form>
+        </div>
+        <div class="promo-section">
+            <h2>Pulse Plus</h2>
+            <p class="trial-info">Free Trial • $59/mo after</p>
+            <blockquote>
+                <p>“Pulse takes the fear and stress out of cash flow projection and management.”</p>
+                <cite>
+                    <span>CASIMIR LOEBER</span><br>
+                    BASE-10 DESIGN & DEVELOPMENT INC.
+                </cite>
+            </blockquote>
+            <hr>
+            <p class="promo-text">Need more from Pulse? If you have a complex business with multiple financial accounts, currencies, or auditing needs, you should try our Pulse Unlimited plan for only $30 more per month.</p>
+            <a href="#" class="switch-link">Switch now.</a>
+        </div>
+    </div>
+
+
+    <div class="main-wrapper">
+        <div class="billing-section">
+            <h2>Billing Information <span class="secure-icon">🔒</span></h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="card-name">Name on card</label>
+                    <input type="text" id="card-name" name="card-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Credit or debit card</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="Card number" required>
+                    <button type="button" class="fill-button">Autofill link</button>
+                </div>
+                <p class="security-note">All data and transactions are securely stored and processed using industry standards.</p>
+            </form>
+          
+        </div>
+        <div class="cancel-section">
+            <h3>Cancel any time.</h3>
+            <p>Your first month is free, but we ask for your credit card upfront to prevent an interruption in service. We won’t charge you until the end of your 30-day free trial.</p>
+            <p>We’ll email you reminders before your free trial is up, and we’ll send you invoices each month when we charge your card.</p>
+        </div>
+        </div>
+       
+    </div>
+    <div class="ending-section">
+        <p>You’re signing up for a free 30-day trial of the Plus plan. At the end of the trial, we’ll charge you $59 a month to keep using Pulse, and you can <a href="#">cancel any time</a>.</p>
+        <div class="terms-section">
+            <label><input type="checkbox" required> I have read and agree to Pulse's <a href="#">Terms of Use</a></label><br>
+            <label><input type="checkbox" required> I have read and agree to Pulse's <a href="#">Privacy Policy</a></label><br>
+            <label><input type="checkbox"> I want to receive a <strong>monthly newsletter</strong> with helpful cash flow advice</label>
+        
+        <button class="trial-button">Start Trial</button>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>

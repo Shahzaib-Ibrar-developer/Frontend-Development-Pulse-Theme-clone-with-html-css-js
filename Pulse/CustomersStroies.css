@@ -1,0 +1,383 @@
+body {
+    font-family: Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------------------------------------------- pulse header section-------------------------------------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #c2f9dd;
+}
+.navbar-toggler {
+    display: none;
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.pulse-green {
+    color: #00e676;
+ 
+}
+
+.pulse-blue {
+    color: #0a6eff;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+
+    color: #00e676;
+
+}
+
+.sign-up {
+    padding: 5px 15px;
+    border: 1px solid #00e676;
+    border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        margin-bottom: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 1.2rem;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+    
+   
+    .navbar-menu.open {
+        display: flex;
+    }
+}
+/* ---------------------------------------------- */
+
+.header-title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: 'Work Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin-bottom: 40px;
+}
+
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+
+.testimonial-item {
+    width: 270px;
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+   
+}
+
+.testimonial-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial-title {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.testimonial-quote {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #555;
+}
+
+.read-case-study-btn {
+    background: none;
+    outline: none;
+    text-decoration: underline;
+    border: 1px solid white;
+    margin-top: 20px;
+    cursor: pointer;
+    color: #007BFF;
+}
+
+.read-case-study-btn:hover {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+    .testimonials-container {
+        padding: 0 20px;
+    }
+
+    .testimonial-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-item img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .testimonial-title {
+        font-size: 16px;
+    }
+
+    .testimonial-quote {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 28px;
+    }
+
+    .testimonial-item img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .testimonial-title {
+        font-size: 14px;
+    }
+
+    .testimonial-quote {
+        font-size: 12px;
+    }
+}
+
+/* ---------------------------------------  feedback section  ---------------------------------------- */
+.feedback-header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.feedback-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.share-story-button {
+    background: none;
+    outline: none;
+    text-decoration: underline;
+    border: 1px solid white;
+    cursor: pointer;
+    color: #007BFF;
+}
+
+.share-story-button:hover {
+    color: #0056b3;
+}
+
+.feedback-item {
+    outline: 1px solid rgb(148, 146, 146);
+    width: 100%; 
+    max-width: 400px;
+    height: 250px; 
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+.feedback-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .feedback-header {
+        font-size: 20px;
+    }
+
+    .feedback-item {
+        width: 80%;
+        max-width: 90%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .feedback-header {
+        font-size: 18px;
+    }
+
+    .feedback-item {
+        width: 90%; 
+        max-width: 100%;
+        padding: 15px;
+        padding-right: 0px !important; 
+    }
+
+    .feedback-main {
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+@media (max-width: 403px) {
+.header-title{
+    font-size: 20px;
+}
+}
+/* --------------------------------------- footer code ---------------------------------------------- */
+.footer {
+    background-color: #0d0d0d;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.logo-section img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.signup-section {
+    margin-bottom: 40px;
+}
+.signup-button button {
+    background-color: #21d07a;
+    color: #fff;
+    width: 300px;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.links-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.links-column h3 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.links-column a {
+    display: block;
+    color: #21d07a;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.links-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+}
+
+.footer-bottom a {
+    color: #21d07a;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width:990px) {
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (max-width:590px) {
+ 
+.signup-button{
+  
+    font-size: 10px;
+        padding: 5px 5px;
+     
+        border-radius: 1px;
+       
+}
+
+
+}

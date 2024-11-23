@@ -1,0 +1,722 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container-image {
+    background-image: url('./assets/backheroo.png');
+    background-size: cover;
+    background-position: center;
+    height: 250vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/*-------------------------------------------------------- pulse header section-------------------------------------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #c2f9dd;
+}
+
+.navbar-toggler {
+    display: none;
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.pulse-green {
+    color: #00e676;
+   
+}
+
+.pulse-blue {
+    color: #0a6eff;
+ 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+
+    color: #00e676;
+
+}
+
+.sign-up {
+    padding: 5px 15px;
+    border: 1px solid #00e676;
+    border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1000px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        margin-bottom: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 1.2rem;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+   
+    .navbar-menu.open {
+        display: flex;
+    }
+}
+
+/* ---------------------------------------------- */
+.decision-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.decision-content {
+    max-width: 50%;
+}
+
+.decision-heading {
+    font-size: 2.5em;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.decision-description {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+}
+
+.testimonial-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    max-width: 60%;
+    text-align: center;
+}
+
+.testimonial-image {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.testimonial-quotes {
+    font-size: 1.2em;
+    color: #28a745;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.testimonial-link {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.testimonial-link:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 815px) {
+    .decision-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .decision-content {
+        max-width: 90%;
+    }
+}
+
+/* ---------------------------------- promo section ---------------------------------- */
+
+.promo-section {
+    background-color: #f7f7f7;
+    text-align: left;
+    font-family: Arial, sans-serif;
+  
+    background-image: url('./assets/backheroo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+   
+}
+
+.promo-container {
+    max-width: 1000px;
+    margin-left: 50px;
+  
+}
+
+.promo-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.promo-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.promo-offer {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.testimonials-heading{
+    text-align: center;
+    font-size: 30px;
+}
+.promo-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.promo-button:hover {
+    background-color: #2980b9;
+}
+
+
+.promo-pricing {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 20px;
+}
+
+.pricing-button {
+    background: none;
+    color: #3498db;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+    margin-left: 5px;
+    transition: color 0.3s ease;
+}
+
+.pricing-button:hover {
+    color: #2980b9;
+}
+
+/* ---------------------------------- hero section type thing ------------------------ */
+
+.hero-section {
+    background-image: url('./assets/hero-section-back.png');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 1230px) {
+    .hero-section {
+    
+        height: 50vh;
+    }
+}
+
+@media (max-width: 960px) {
+    .promo-description{
+        display: none;
+    }
+    .promo-pricing{
+        display: none;
+    }
+    .hero-section {
+      
+        height: 40vh;
+    }
+}
+
+@media (max-width: 760px) {
+    .hero-section {
+  
+        height: 30vh;
+    }
+}
+
+@media (max-width: 650px) {
+    .hero-section {
+     
+        height: 25vh;
+    }
+}
+
+/* -----------------------------code for container ------------------- */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.container h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.container p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.feature-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.feature-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.feature-item h2 {
+    font-size: 1.25rem;
+    color: #2f9e44;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #2f9e44;
+    text-decoration: none;
+    font-weight: bold;
+  
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:690px) {
+    .container h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .features>* {
+        flex: 1 1 30%;
+    
+        margin: 10px;
+        box-sizing: border-box;
+      
+    }
+
+}
+
+@media (max-width: 768px) {
+    .features>* {
+        flex: 1 1 45%;
+       
+    }
+}
+
+
+@media (max-width: 480px) {
+    .features>* {
+        flex: 1 1 100%;
+   
+    }
+}
+
+/* ---------------------------------------------- code for content wrapper ------------------------------------- */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.text-section {
+    max-width: 50%;
+}
+
+.text-section h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #2f9e44;
+    border-radius: 5px;
+    color: #2f9e44;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #2f9e44;
+    color: #fff;
+}
+
+.testimonial-section {
+    max-width: 40%;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.customer-img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    color: #2f9e44;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.customer-name {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.read-story-link {
+    font-size: 0.875rem;
+    color: #2f9e44;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-story-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+    .content-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+
+    }
+
+    .testimonial-section {
+        max-width: 70%;
+    }
+}
+
+@media (max-width:600px) {
+    .cta-button {
+
+        padding: 5px 10px;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    .text-section h1 {
+        font-size: 25px;
+
+    }
+}
+
+/* ----------------------------- code for blog section ------------------------ */
+.blog-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+}
+
+.blog-title {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+
+}
+
+.blog-description {
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.blog-posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.blog-post {
+    padding: 10px;
+    max-width: 250px;
+    height: 500px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    max-width: 250px;
+    height: 200px;
+}
+
+.post-title {
+    font-size: 16px;
+}
+
+.post-excerpt {
+    font-size: 14px;
+}
+
+/*  --------------------------  code for testimonials section ------------------- */
+.testimonials-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.testimonials-container {
+    width: 300px;
+}
+
+.testimonial-quote {
+    font-size: 14px;
+}
+
+.testimonial-description {
+    font-size: 12px;
+}
+
+
+/* --------------------------------------- footer code ---------------------------------------------- */
+.footer {
+    background-color: #0d0d0d;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.logo-section img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.signup-section {
+    margin-bottom: 40px;
+}
+
+.signup-button button {
+    background-color: #21d07a;
+    color: #fff;
+    width: 300px;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.links-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.links-column h3 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.links-column a {
+    display: block;
+    color: #21d07a;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.links-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+}
+
+.footer-bottom a {
+    color: #21d07a;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width:990px) {
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:590px) {
+
+    .signup-button {
+        /* display: none; */
+        font-size: 10px;
+        padding: 5px 5px;
+
+        border-radius: 1px;
+
+    }
+
+
+}

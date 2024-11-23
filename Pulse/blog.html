@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Listing</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/index.html">
+                <img src="./assets/pulse-logo.png" alt="">
+            </a>
+            </div>
+            <button class="navbar-toggler">
+                &#9776; 
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="/Features.html">Features</a></li>
+                <li><a href="/CustomerStories.html">Customer Stories</a></li>
+                <li><a href="/Pricing.html">Pricing</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/BillingInfo.html" class="sign-up">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="main-blogs">
+            <div class="categories">
+                <h3>Categories</h3>
+                <ul id="categoryList">
+                    <li data-category="all">All</li>
+                    <li data-category="business">Business</li>
+                    <li data-category="entrepreneurship">Entrepreneurship</li>
+                    <li data-category="small-business">Small Business</li>
+                    <li data-category="cash-flow-tips">Cash Flow Tips</li>
+                    <li data-category="side-hustle">Side Hustle & Teaching</li>
+                </ul>
+            </div>
+            <div class="blogs" id="blogContainer">
+             
+                <button class="read-more-btn" data-id="${blog.id}">${blog.text}</button>
+           
+            </div>
+        </div>
+        <div class="pagination">
+            <button id="prevBtn">Previous</button>
+            <span id="pageNum">1</span>
+            <button id="nextBtn">Next</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <div class="logo-section">
+                    <img src="./assets/pulse-logo.png" alt="Pulse Logo" class="logo">
+                </div>
+                <div class="signup-section">
+                    <a href="#" class="signup-button"><button>Sign Up for a Free 30-Day Trial</button></a>
+                </div>
+            </div>
+            <div class="links-section">
+                <div class="links-column">
+                    <h3>Product</h3>
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Sign Up</a>
+                </div>
+                <div class="links-column">
+                    <h3>Company</h3>
+                    <a href="#">Customer Stories</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="links-column">
+                    <h3>Resources</h3>
+                    <a href="#">Support</a>
+                    <a href="#">Blog</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2019 Pulseapp.com, Inc. All Rights Reserved | <a href="#">Terms of Use</a> | <a href="#">Privacy
+                    Policy</a> | <a href="#">EU Privacy</a></p>
+            <p>Pulse is made by <a href="#">Simple Focus</a>. We also make <a href="#">Ballpark</a>, <a
+                    href="#">Sifter</a>, and <a href="#">Curated</a>.</p>
+        </div>
+    </footer>
+    <script src="blog.js"></script>
+</body>
+
+</html>

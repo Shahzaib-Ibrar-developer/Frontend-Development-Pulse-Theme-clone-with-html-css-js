@@ -1,0 +1,500 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.trial-heading{
+    text-align: center;
+    font-size: 40px;
+}
+.trial-description{
+    text-align: center;
+}
+
+/*-------------------------------------------------------- pulse header section-------------------------------------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #c2f9dd;
+}
+.navbar-toggler {
+    display: none;
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.pulse-green {
+    color: #00e676;
+   
+}
+
+.pulse-blue {
+    color: #0a6eff;
+  
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+
+    color: #00e676;
+
+}
+
+.sign-up {
+    padding: 5px 15px;
+    border: 1px solid #00e676;
+    border-radius: 5px;
+}
+/* Responsive Styles */
+@media (max-width: 1000px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        margin-bottom: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 1.2rem;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+    
+    
+    .navbar-menu.open {
+        display: flex;
+    }
+}
+/* ---------------------------------------- code for pricing section --------------------------------- */
+.pricing-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pricing-intro {
+    max-width: 250px;
+    padding: 3rem 1.5rem;
+}
+
+.intro-heading {
+    font-size: 1rem;
+    font-weight: bold;
+    color:#10B981;
+  
+}
+
+.intro-description {
+    font-size: 1rem;
+    color: #7f8c8d;
+    line-height: 1;
+    list-style: none; 
+
+}
+
+
+.intro-description::before {
+    content: '\2022'; 
+    color: #000000;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em; 
+    margin-right: 0.5em;
+}
+
+.intro-description br + ::before {
+    content: '\2022'; 
+}
+.intro-cta {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+.cta-button {
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    font-size: 1rem;
+    text-decoration: underline;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Pricing card container */
+.pricing-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 250px;
+    text-align: center;
+    height: 500px;
+   
+}
+
+.pricing-card-one{
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+    padding: 24px;
+    max-width: 250px;
+
+    height: 450px ;
+    margin-left: 2px;
+    
+}
+
+.card-complexity{
+    background-color: rgb(198, 191, 191);
+    font-size: 12px;
+  padding: 15px;
+    font-weight: bold;
+    
+}
+
+.card-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #333333;
+  
+}
+
+.card-title-1{
+    font-size: 1rem;
+    font-weight: 100;
+    color:#10B981;
+    margin-bottom: 10px;
+}
+
+.card-price {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1D4ED8;
+   
+}
+.price-duration {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666666;
+}
+
+.signup-button {
+    background-color: #1D4ED8;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 24px;
+    transition: background-color 0.3s ease;
+}
+.signup-butto button {
+    background-color: #21d07a;
+    color: #fff;
+    width: 300px;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.signup-button:hover {
+    background-color: #1E40AF;
+}
+
+.card-benefits-title {
+    font-size: 0.5rem;
+    font-weight: 600;
+    color: #4B5563;
+    margin-bottom: 16px;
+}
+
+.card-benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.card-benefits-list li {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #555555;
+    margin-bottom: 12px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.card-benefits-list li:before {
+    content: '✔';
+    color: #10B981;
+    font-weight: bold;
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+
+
+/* ---------------------------------------- TESTIMONIALS SECTIONS -------------------------------- */
+.testimonial-section {
+    margin-top: 10px;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f9f4; 
+}
+
+.testimonial-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial-image-wrapper {
+    margin-bottom: 20px;
+}
+
+.testimonial-image {
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.testimonial-quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #34495e; 
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.testimonial-author-wrapper {
+    margin-top: 10px;
+}
+
+.testimonial-author {
+    font-size: 1rem;
+    color: #27ae60; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* --------------------------------------- FAQ SECTION CODE ---------------------------------------- */
+.faq-section {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+
+.faq-title {
+    font-size: 2.5rem;
+    text-align: center; 
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.faq-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+.faq-column {
+    flex: 1;
+    min-width: 300px; 
+    margin: 10px;
+}
+
+.faq-item {
+    margin-bottom: 20px; 
+}
+
+.faq-question {
+    font-size: 1.2rem; 
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.faq-answer {
+    font-size: 1rem; 
+    line-height: 1.6;
+    color: #666666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .faq-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .faq-title {
+        font-size: 2rem; 
+        padding-left: 0;
+    }
+
+    .faq-item {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-title {
+        font-size: 1.5rem; 
+    }
+
+    .faq-question {
+        font-size: 1rem; 
+    }
+
+    .faq-answer {
+        font-size: 0.9rem; 
+    }
+}
+
+/* --------------------------------------- footer code ---------------------------------------------- */
+.footer {
+    background-color: #0d0d0d;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.logo-section img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.signup-section {
+    margin-bottom: 40px;
+}
+
+.signup-button {
+    background-color: #21d07a;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.links-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.links-column h3 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.links-column a {
+    display: block;
+    color: #21d07a;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.links-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+}
+
+.footer-bottom a {
+    color: #21d07a;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width:990px) {
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (max-width:590px) {
+ 
+.signup-button{
+    font-size: 10px;
+        padding: 5px 5px;
+     
+        border-radius: 1px;
+       
+}
+
+
+}
